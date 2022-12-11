@@ -46,6 +46,10 @@ a {
   margin: 0 auto;
 }
 
+.mainContainer {
+  margin-top: 4rem;
+}
+
 .title {
   font-family: var(--type-second);
   line-height: 1;
@@ -63,7 +67,7 @@ a {
   background: #fb1;
   position: absolute;
   bottom: 5px;
-  left: -5px;
+  left: -3px;
   border-radius: .2rem;
   z-index: -1;
 }
