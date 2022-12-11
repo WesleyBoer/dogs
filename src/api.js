@@ -1,4 +1,5 @@
-export const API_URL = 'https://dogsapi.origamid.dev/json';
+export const API_URL = 'http://dogsapi.test/json';
+// export const API_URL = 'https://dogsapi.origamid.dev/json';
 
 export function TOKEN_POST(body) {
   return {
@@ -46,6 +47,19 @@ export function USER_POST(body) {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(body),
+    },
+  };
+}
+
+export function PHOTO_POST(formData, token) {
+  return {
+    url: API_URL + '/api/photo',
+    options: {
+      method: 'POST',
+      headers: {
+        Authorization: 'Bearer ' + token,
+      },
+      body: formData,
     },
   };
 }
