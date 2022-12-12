@@ -36,7 +36,7 @@ const LoginPasswordReset = () => {
     }
   }
   return (
-    <section>
+    <section className="animeLeft">
       <Head
         title="Redefinir senha"
         description="Página de login do site Dogs."
